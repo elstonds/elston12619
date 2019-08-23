@@ -1,33 +1,22 @@
-#include<iostream>
-using namespace std;
-int main()
+#include<stdio.h>
+
+void main()
 {
-int n,arr[100000],i,t,flag;
-cin >> n;
-t=n-1;
-for(i=0;i<n;i++)
+int n;
+scanf("%d",&n);
+int a[n],count=0;
+for(int i=0;i<n;i++)
+scanf("%d",&a[i]);
+for(int i=0;i<n-1;i++)
 {
-cin >> arr[i];
-}
-for(i=0;i<n-1;i++)
-{
-flag=0;
+count = n-1-i;
 for(int j=i+1;j<n;j++)
 {
-if(arr[i]>=arr[j])
-{
-flag++;
+if(a[i]>=a[j]) count=count - 1;
+else break;
 }
-else
-{
-break;
+if(count == 0)
+printf("%d ",a[i]);
 }
-}
-if(flag==(t-i))
-{
-cout<< arr[i]<<" " ;
-}
-}
-cout << arr[n-1];
-return 0;
+printf("%d",a[n-1]);
 }
