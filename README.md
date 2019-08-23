@@ -36,20 +36,4 @@ Playlist in the delivered order or put some on another table. After being put on
 table only the topmost record can be added to the playlist at any time.
 Print whether Pink will be sad or happy after the delivery of the records.
 
-6.After getting her PhD, Christie has become a celebrity at her university, and her
-Facebook profile is full of friend requests. Being the nice girl, she is, Christie has
-accepted all the requests.
-Now Kuldeep is jealous of all the attention she is getting from other guys, so he asks
-her to delete some of the guys from her friend list.
-To avoid a 'scene', Christie decides to remove some friends from her friend list, since
-she knows the popularity of each of the friend she has, she uses the following
-algorithm to delete a friend.
-Algorithm Delete(Friend):
-DeleteFriend=false
-for i = 1 to Friend.length-1
-if (Friend[i].popularity < Friend[i+1].popularity)
-delete i th friend
-DeleteFriend=true
-break
-if(DeleteFriend == false)
-delete the last friend.
+
